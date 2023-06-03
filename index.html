@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div id="head">
+            <h1>Generate a</h1>
+            <h2>random password</h2>
+            <h3>Never use an insecure password again.</h3>
+
+            <div id="input-section">
+                <div id="password-length">
+                    <p id="input-discription">Set password length:</p>
+                    <input type="number" id="character-input" min="8" max="20" value="15">
+                </div>
+
+                <div id="check-section">
+                    <div class="check">
+                        <input type="checkbox" id="numbers-check" value="number" name="Numbers">
+                        <label for="Number">Use numbers</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="symbols-check" value="symbol" name="Symbols">
+                        <label for="Symbol">Use symbols</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <button type="button" id="password-btn">Generate passwords</button>
+            
+        </div>
+
+        <div id="password-section">
+            <div class="password-field">
+                <p id="password1"></p>
+                <button type="button" id="copy-btn1">copy password</button>
+            </div>
+            <div class="password-field">
+                <p id="password2"></p>
+                <div>
+                    <button type="button" id="copy-btn2">copy password</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+        <script src="index.js"></script>
+</body>
+</html>
